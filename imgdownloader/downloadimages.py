@@ -6,13 +6,15 @@
 
 # assuming a csv file with a name in column 0 and the image url in column 1
 
-import urllib
 import csv
-import unicodedata
-import re
-import os
-from urllib.request import urlretrieve
 import logging
+import os
+import re
+import unicodedata
+import urllib
+
+from urllib.request import urlretrieve
+
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -36,7 +38,10 @@ def slugify(value, allow_unicode=False):
     if allow_unicode:
         value = unicodedata.normalize('NFKC', value)
     else:
-        value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode('ascii')
+        value = unicodedata \
+        .normalize('NFKD', value) \
+        .encode('ascii', 'ignore') \
+        .decode('ascii')
     value = re.sub(r'[^\w\s-]', '', value).strip().lower()
     return(value)
 
@@ -58,7 +63,8 @@ def main():
             # check if we have an image URL
             if image_file:
                 urlretrieve(
-                    "https://d1pkzhm5uq4mnt.cloudfront.net/imagens/capas/{0}".format(image_file),
+                    "https://d1pkzhm5uq4mnt.cloudfront.net/imagens/capas/{0}" \
+                    .format(image_file),
                     'capas/{0}.jpg'.format(image_slug)
                 )
                 logger.info('Image saved for %s', image_name)
