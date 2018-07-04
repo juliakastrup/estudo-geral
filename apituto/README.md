@@ -13,7 +13,7 @@ https://scotch.io/tutorials/build-a-rest-api-with-django-a-test-driven-approach-
    
    Quando tomei erro:
    
-    ```OperationalError at /bucketlists/
-    no such column: api_bucketlist.owner_id```
+    OperationalError at /bucketlists/
+    no such column: api_bucketlist.owner_id
 
 Última tentativa em: 2018-07-04 01:42	
