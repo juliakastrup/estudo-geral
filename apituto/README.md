@@ -3,6 +3,8 @@ Tutorial disponível em:
 - https://scotch.io/tutorials/build-a-rest-api-with-django-a-test-driven-approach-part-1
 - https://scotch.io/tutorials/build-a-rest-api-with-django-a-test-driven-approach-part-2
 
+Status:
+
 - Parte 1 finalizada.
 
 - Parte 2 não finalizada.
