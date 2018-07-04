@@ -1,4 +1,4 @@
-#!/home/juliakastrup/projects/apituto/venv/bin/python
+#!/home/juliakastrup/estudo-geral/apituto/venv/bin/python
 
 import sys
 import getopt

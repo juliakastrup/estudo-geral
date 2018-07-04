@@ -5,13 +5,15 @@ from rest_framework import status
 from django.core.urlresolvers import reverse
 from django.contrib.auth.models import User
 
+
+
 class ModelTestCase(TestCase):
     """This class defines the test suite for the bucketlist model."""
 
     def setUp(self):
         """Define the test client and other test variables."""
         user = User.objects.create(username="nerd") # ADD THIS LINE
-        self.name = "Write world class code"
+    self.name = "Write world class code"
         # specify owner of a bucketlist
         self.bucketlist = Bucketlist(name=self.name, owner=user) # EDIT THIS TOO
 
@@ -28,12 +30,12 @@ class ViewTestCase(TestCase):
     def setUp(self):
         """Define the test client and other test variables."""
         user = User.objects.create(username="nerd")
-        
+
         # Initialize client and force it to use authentication
         self.client = APIClient()
         self.client.force_authenticate(user=user)
 
-        #Since user model instance is not serializable, use its Id/Pk
+        # Since user model instance is not serializable, use its Id/PK
         self.bucketlist_data = {'name': 'Go to Ibiza', 'owner': user.id}
         self.response = self.client.post(
             reverse('create'),
@@ -42,11 +44,11 @@ class ViewTestCase(TestCase):
 
     def test_api_can_create_a_bucketlist(self):
         """Test the api has bucket creation capability."""
-        self.assertEqual(self.response.status_code, status.HTTP_201_CREATED)        
+        self.assertEqual(self.response.status_code, status.HTTP_201_CREATED)
 
     def test_authorization_is_enforced(self):
         """Test that the api has user authorization."""
-        new_client = APIClient
+        new_client = APIClient()
         res = new_client.get('/bucketlists/', kwargs={'pk': 3}, format="json")
         self.assertEqual(res.status_code, status.HTTP_401_UNAUTHORIZED)
 

@@ -1,4 +1,4 @@
-#!/home/juliakastrup/projects/apituto/venv/bin/python3
+#!/home/juliakastrup/estudo-geral/apituto/venv/bin/python3
 from django.core import management
 
 if __name__ == "__main__":
