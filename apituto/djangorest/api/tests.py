@@ -30,8 +30,6 @@ class ViewTestCase(TestCase):
 
     def setUp(self):
         """Define the test client and other test variables."""
-        import ipdb
-        ipdb.set_trace()
         user = User.objects.create(username="nerd")
 
         # Initialize client and force it to use authentication
@@ -63,8 +61,6 @@ class ViewTestCase(TestCase):
             kwargs={'pk': expected_bucketlist.id}, format="json")
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        import ipdb
-        ipdb.set_trace()
         self.assertContains(response, expected_bucketlist)
 
     def test_api_can_update_bucketlist(self):
