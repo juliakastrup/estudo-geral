@@ -15,7 +15,7 @@ Status:
 
     ```
     IntegrityError at /bucketlists/
-NOT NULL constraint failed: api_bucketlist.owner_id
+    NOT NULL constraint failed: api_bucketlist.owner_id
     ```
 
 - Parei em: https://scotch.io/tutorials/build-a-rest-api-with-django-a-test-driven-approach-part-2#toc-how-to-pass-those-tests
