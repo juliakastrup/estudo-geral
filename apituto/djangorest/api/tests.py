@@ -2,7 +2,7 @@ from django.test import TestCase
 from .models import Bucketlist
 from rest_framework.test import APIClient
 from rest_framework import status
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.contrib.auth.models import User
 
 
@@ -12,23 +12,26 @@ class ModelTestCase(TestCase):
 
     def setUp(self):
         """Define the test client and other test variables."""
-        user = User.objects.create(username="nerd") # ADD THIS LINE
-    self.name = "Write world class code"
+        user = User.objects.create(username="nerd")
+        self.item_name = "Write world class code"
         # specify owner of a bucketlist
-        self.bucketlist = Bucketlist(name=self.name, owner=user) # EDIT THIS TOO
+        self.bucketlist = Bucketlist(name=self.item_name, owner=user)
 
     def test_model_can_create_a_bucketlist(self):
         """Test the bucketlist model can create a bucketlist."""
         old_count = Bucketlist.objects.count()
+        self.assertEqual(0, old_count)
         self.bucketlist.save()
         new_count = Bucketlist.objects.count()
-        self.assertNotEqual(old_count, new_count)
+        self.assertEqual(1, new_count)
 
 class ViewTestCase(TestCase):
     """Test suite for the api views."""
 
     def setUp(self):
         """Define the test client and other test variables."""
+        import ipdb
+        ipdb.set_trace()
         user = User.objects.create(username="nerd")
 
         # Initialize client and force it to use authentication
@@ -54,19 +57,21 @@ class ViewTestCase(TestCase):
 
     def test_api_can_get_a_bucketlist(self):
         """Test the api can get a given bucketlist."""
-        bucketlist = Bucketlist.objects.get(id=1)
+        expected_bucketlist = Bucketlist.objects.get(id=1)
         response = self.client.get(
             '/bucketlists/',
-            kwargs={'pk': bucketlist.id}, format="json")
+            kwargs={'pk': expected_bucketlist.id}, format="json")
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertContains(response, bucketlist)
+        import ipdb
+        ipdb.set_trace()
+        self.assertContains(response, expected_bucketlist)
 
     def test_api_can_update_bucketlist(self):
         """Test the api can update a given bucketlist."""
         bucketlist = Bucketlist.objects.get()
         change_bucketlist = {'name': 'Something new'}
-        res = self.client.put(
+        res = self.client.put(  
             reverse('details', kwargs={'pk': bucketlist.id}),
             change_bucketlist, format='json'
         )
