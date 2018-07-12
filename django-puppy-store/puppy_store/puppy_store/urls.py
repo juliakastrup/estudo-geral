@@ -5,8 +5,7 @@ urlpatterns = [
 	url(r'^', include('puppies.urls')),
 	url(
 		r'^api_auth/',
-		include('rest_framework.urls',
-			namespace='rest_framework')
+		include('rest_framework.urls', namespace='rest_framework')
 	),
 	url(r'^admin/', admin.site.urls),
-	]
+]
