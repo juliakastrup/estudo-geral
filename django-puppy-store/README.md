@@ -17,4 +17,4 @@ Status:
 
 Início em: 2018-07-04 02:10
 
-Última tentativa em: 2018-07-11 00:23
+Última atividade em: 2018-07-11 00:23
