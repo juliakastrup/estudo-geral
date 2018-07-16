@@ -4,6 +4,8 @@ Tutorial disponível em:
 
 Status:
 
+- 2018-07-16: Finalizei o tutorial básico.
+
 - 2018-07-11: Tudo certo, sem maiores complicações. Pausei logo antes de "You can also test this out with the Browsable API".
 
 - 2018-07-08: Resolvi os problemas de banco com o Diego. Voltei a usar o Postgres. Pausei logo antes de "Browsable API".
@@ -17,4 +19,4 @@ Status:
 
 Início em: 2018-07-04 02:10
 
-Última atividade em: 2018-07-11 00:23
+Última atividade em: 2018-07-16 21:20
