@@ -1,4 +1,5 @@
 /* css header */
+
 div.topbar {
 	display: inline-block;
 	width: 100%;
@@ -73,6 +74,19 @@ div.footer {
 .logo-footer {
 	margin-left: 0px;
 }
+
+/* css body */
+
+.local {
+	display: inline;
+}
+
+p.filtro {
+	display: inline;
+}
+
+
+
 
 
 
