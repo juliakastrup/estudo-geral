@@ -1,0 +1,50 @@
+
+div.topbar {
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px 
+	border-bottom-color: gray;
+
+}
+
+.topleftbar {
+	float: left;
+	background-color: #FFF;
+	width: 15%; 
+}
+
+.toprightbar {
+	float: right;
+    background-color: #00BCBE;
+    overflow: hidden;
+	width: 85%; 
+	height: 54px;
+	display: inline-block;
+	margin-top: 0px;
+}
+
+.topmenu {
+	float: right;
+	width: auto;
+	padding: 0px;
+	margin-top: 2px;
+}
+
+img {
+	margin-left: 15%;
+    margin-right: auto;
+	margin-top: 5px;
+}
+
+ul li {
+	display: inline;
+}
+
+ul li a {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-decoration: none;
+	color: white;
+	float: right;
+	list-style-type: none;
+	padding: 0px 10px;
+}
