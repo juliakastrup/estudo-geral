@@ -36,11 +36,11 @@ img {
 	margin-top: 5px;
 }
 
-ul li {
+ul.listamenu li.itemmenu {
 	display: inline;
 }
 
-ul li a {
+ul.listamenu li.itemmenu a {
 	font-family: 'Source Sans Pro', sans-serif;
 	text-decoration: none;
 	color: white;
@@ -76,8 +76,7 @@ div.footer {
 }
 
 /* css body */
-
-.local {
+div.selectbar {
 	display: inline;
 }
 
