@@ -213,7 +213,7 @@ span:before {
 	background: #505E69;
 	width: 198px;
 	border-radius: 4px;
-	padding-left: 65px;
+	padding-left: 45px;
 
 
 }
@@ -250,6 +250,7 @@ img.icone
 .local, .vacdata, .vachora {
     color: #fff;
     padding-left: 30px;
+    padding-right: 40px;
     padding-bottom: 11px;
     display: table;
   }
