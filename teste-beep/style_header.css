@@ -6,10 +6,10 @@ header .row {
 }
 
 .fixed {
-		position: fixed;
-		top:0; left:0;
-		z-index: 999;
-		width: 100%;
+	position: fixed;
+	top:0; left:0;
+	z-index: 999;
+	width: 100%;
 	}
 
 .topleftbar {
@@ -22,12 +22,12 @@ header .row {
 }
 
 img.logo {
-		margin: 10px;
+	margin: 10px;
 }
 
 .listamenu {
-		margin: 15px 15px;
-		float: right;
+	margin: 15px 15px;
+	float: right;
 }
 ul.listamenu li{
 	display: inline;}
@@ -103,28 +103,28 @@ nav.filter.navbar.navbar-expand-lg {
 	color: #535C61;
 }
 .dropdown a span {
-		padding-top: 2px;
-		float: left;
-		padding-left: 10px;
+	padding-top: 2px;
+	float: left;
+	padding-left: 10px;
 }
 
 .dropdown-toggle::after {
-		display: inline-block;
-		width: 35px;
-		height: 30px;
-		float: right;
-		vertical-align: .255em;
-		background: #10b9bc;
-		content: "";
-		border-top: 0 solid !important;
-		border-right: 0 solid transparent !important;
-		border-bottom: 0 !important;
-		border-left: 0 solid transparent !important;
+	display: inline-block;
+	width: 35px;
+	height: 30px;
+	float: right;
+	vertical-align: .255em;
+	background: #10b9bc;
+	content: "";
+	border-top: 0 solid !important;
+	border-right: 0 solid transparent !important;
+	border-bottom: 0 !important;
+	border-left: 0 solid transparent !important;
 }
 .dropdown-menu {
-			border-radius: 0px;
-			min-width: 190px;
-			padding: 0px;
+	border-radius: 0px;
+	min-width: 190px;
+	padding: 0px;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
@@ -132,7 +132,7 @@ nav.filter.navbar.navbar-expand-lg {
 }
 
 .dropdown-item {
-			padding: 5px 10px;
+	padding: 5px 10px;
 }
 		
 .txt-filter {
@@ -140,13 +140,13 @@ nav.filter.navbar.navbar-expand-lg {
 }
 
 .nav-link {
-			padding: 0px;
+	padding: 0px;
 }
 
 .setinha {
-		float: right;
-		margin-right: -28px;
-		margin-top: 11px;
+	float: right;
+	margin-right: -28px;
+	margin-top: 11px;
 }
 
 		/* css datepicker */
@@ -158,6 +158,7 @@ input#datepicker {
 	width: 190px;
 	padding-left: 10px;
 }
+
 #datepicker {
 	color: #585F65;
 }
@@ -169,17 +170,17 @@ input#datepicker {
 	margin-top: 1px;
 }
 .next-day	{
-			margin-left: -4px;
+	margin-left: -4px;
 }
 
 
 img.setinha_data_prev {
-		transform: rotate(90deg);
-				margin-top: -1px;
+	transform: rotate(90deg);
+	margin-top: -1px;
 }
 img.setinha_data_next {
-		transform: rotate(-90deg);
-				margin-top: -1px;
+	transform: rotate(-90deg);
+	margin-top: -1px;
 }
 
 /* css lista */
