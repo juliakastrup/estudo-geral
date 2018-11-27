@@ -255,7 +255,8 @@ img.icone
   }
 
 .nomecliente, .pedido, ul.descpedido, .nomeparceiro, .endparceiro, .celular {
-	padding-top: 10px;
+	color: #535C61;
+	font-family: 'Source Sans Pro', sans-serif;	padding-top: 10px;
     padding-left: 30px;
     padding-bottom: 11px;
     display: table;
