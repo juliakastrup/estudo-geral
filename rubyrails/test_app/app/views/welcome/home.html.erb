@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to my first Ruby project</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="col-3">
+        <ul>
+          <li><%= link_to 'About me', welcome_about_path %></li>
+          <li>How Ruby came to my life</li>
+          <li><span>Projects I am interested in</span></li>
+        </ul>
+      </div>
+      <div class="col-9">
+        <span>Oi, meu nome é Júlia e esse é o meu site!</span>
+        <%= image_tag("/images/boomboomkid.jpg") %>      </div>
+      </div>
+    </div>
+  </body>
+</html>
