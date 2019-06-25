@@ -1,14 +1,12 @@
 <p id="notice"><%= notice %></p>
+  <p>
+    <strong>Title:</strong>
+    <%= @article.title %>
+  </p>
 
-
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @article.description %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @article.description %>
+  </p>
 
 <%= link_to 'Back', articles_path %>
